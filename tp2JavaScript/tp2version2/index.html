@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css.css">
+    <script src="assets/todolist.js"></script>
+    <script src="assets/form.js"></script>
+    <script src="assets/taskSortI.js"></script>
+    <script src="assets/taskSortA.js"></script>
+    <script src="assets/task.js"></script>
+    <script src="assets/main.js"></script>
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="entete">
+    <h2>TP2</h2>
+    <strong><p>Gestionnaire de tâches en P.O.O.</p></strong>
+    </div>
+    <hr>
+    <form data-js-form>
+        <h2>Ajouter une tâche</h2>
+        <section class="container_questionTache">
+        <div class="questionTache">
+            <Span>Nouvelle tâche : </Span> 
+            <input type="text" name="nomTache" data-js-nomTache>
+            <span>🖉</span>
+        </div>
+        <div class="questionTache">
+            <span>Description de la tâche : </span> 
+            <input type="text" name="descriptionTache" data-js-descriptionTache>
+            <span>🖉</span>
+        </div>
+        <div class="questionTache_radio">
+            <p>Importance de la tâche</p>
+            
+            <input type='radio' name="importance" id="haut" value="Haute">
+            <label for="haut"><span>Haute</span></label>
+            <input type='radio' name="importance" id="moyen" value="Moyenne">
+            <label for="moyen"><span>Moyenne</span></label>
+            <input type='radio' name="importance" id="basse" value="Basse">
+            <label for="basse"><span>Basse</span></label>
+        </div>
+        
+        <input type="button" data-js-btnAjout value="Ajouter la tâche">
+        </section>
+        <section class="listeDeTaches">
+            <h2>Liste des tâches</h2>
+            <div >
+                <table data-js-liste>
+                </table>
+            </div>
+            <span><button data-js-triAlpha>Trier par ordre alphabétique</button></span>
+            <span><button data-js-triImport>Trier par importance</button></span>
+        </section>
+        <section class="description" >
+            <h2>Détail de la tâche</h2><span data-js-btnAccordeon class="chevron top accordion"></span>
+            <div data-js-description class="panel">
+            </div>
+        </section>
+    </form>
+</body>
+</html>

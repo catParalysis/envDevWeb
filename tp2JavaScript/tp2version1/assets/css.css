@@ -1,0 +1,57 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+
+section{
+    margin: 25px;
+}
+form>h2{
+    margin-left: 25px;
+}
+button{
+    margin-left: 25px;
+}
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.listeDeTaches{
+    border: 1px solid black;
+    min-height: 100px;
+}
+.description{
+    display: flex;
+    border: 1px solid black;
+    min-height: 20px;
+    flex-direction: column;
+}
+.description>span{
+    align-self: flex-end;
+}
+th{
+    border: 1px solid black;
+    padding: 2px;
+}
+.hidden{
+    display: none;
+}
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+.chevron.bottom::before{
+    transform: rotate(135deg);
+}

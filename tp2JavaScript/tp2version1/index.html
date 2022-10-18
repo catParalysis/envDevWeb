@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css.css">
+    <script src="assets/todolist.js"></script>
+    <script src="assets/taches.js"></script>
+    <script src="assets/main.js"></script>
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="entete">
+    <h2>TP2</h2>
+    <strong><p>Gestionnaire de tâches en P.O.O.</p></strong>
+    </div>
+    <hr>
+    <form data-js-form>
+        <h2>Ajouter une tâche</h2>
+        <section class="container_questionTache">
+        <div class="questionTache">
+            <Span>Nouvelle tâche : </Span> 
+            <input type="text" name="nomTache" data-js-nomTache>
+            <span>🖉</span>
+        </div>
+        <div class="questionTache">
+            <span>Description de la tâche : </span> 
+            <input type="text" name="descriptionTache" data-js-descriptionTache>
+            <span>🖉</span>
+        </div>
+        <div class="questionTache_radio">
+            <p>Importance de la tâche</p>
+            <input type='radio' name="importance" value="Haute"><span>Haute</span>
+            <input type='radio' name="importance" value="Moyenne"><span>Moyenne</span>
+            <input type='radio' name="importance" value="Basse"><span>On s'en calisse un peu</span>
+        </div>
+        
+        <button data-js-btnAjout>Ajouter la tâche</button>
+        </section>
+        <section class="listeDeTaches">
+            <h2>Liste des tâches</h2>
+            <div >
+                <table data-js-liste>
+                    <tr>
+                        <th>Nom de la tâche</th><th>Importance</th>
+                    </tr>
+                </table>
+            </div>
+            <span><button data-js-triAlpha>Trier par ordre alphabétique</button></span>
+            <span><button data-js-triImport>Trier par importance</button></span>
+        </section>
+        <section class="description" >
+            <h2>Détail de la tâche</h2><span data-js-btnAccordeon class="chevron top"></span>
+            <div data-js-description class="hidden">
+            </div>
+        </section>
+    </form>
+</body>
+</html>
